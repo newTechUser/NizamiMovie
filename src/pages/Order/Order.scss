@@ -1,0 +1,167 @@
+.order__container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #fff;
+
+    .order {
+        display: flex;
+        margin: 0;
+        padding: 0;
+
+        &__background {
+            flex: 46%;
+            background-image: url("@/assets/imgs/order/orderBg.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            &__spirited {
+                display: flex;
+                column-gap: 20px;
+                max-width: fit-content;
+                padding-bottom: 9px;
+                margin: 143px 0 0 101px;
+                border-bottom: 1px solid rgba(171, 10, 16, 1);
+            }
+        }
+
+        &__right {
+            flex: 54%;
+            padding-top: 97px;
+            padding-bottom: 127px;
+            background-color: rgba(18, 18, 18, 1);
+
+            &__content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                &--date,
+                &--time {
+                    border-bottom: 1px solid rgba(82, 82, 82, 1);
+                    margin-bottom: 46px;
+                    padding-bottom: 52px;
+
+                    div:nth-child(1) {
+                        font-size: 25px;
+                        line-height: 15px;
+                        text-align: center;
+                        margin-bottom: 34px;
+                    }
+                }
+
+                &__selection {
+                    &--date {
+                        button {
+                            padding: 21px 10px;
+                        }
+                    }
+
+                    &--time {
+                        button {
+                            padding: 10px 22px;
+                        }
+                    }
+
+                    &-button {
+                        margin: 0 20px;
+                        background: rgba(43, 43, 43, 1);
+                        color: rgba(238, 238, 238, 1);
+                        border: none;
+                        border-radius: 30px;
+                        cursor: pointer;
+
+                        &--selected {
+                            background: rgba(141, 9, 13, 1);
+                        }
+                    }
+                }
+
+                &__seats {
+                    display: grid;
+                    grid-template-columns: auto repeat(12, 1fr) auto;
+                    grid-gap: 12px;
+                    align-items: center;
+
+                    &-seat {
+                        width: 19px;
+                        height: 19px;
+                        background: rgba(164, 164, 164, 1);
+                        border-radius: 50%;
+                        cursor: pointer;
+
+                        &--selected {
+                            background: rgba(141, 9, 13, 1);
+                        }
+
+                        &--booked {
+                            background: rgba(57, 57, 57, 1);
+                        }
+                    }
+
+                    &-row-label-right,
+                    &-row-label-left {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 14px;
+                        color: white;
+                        width: 20px;
+                    }
+
+                    &-row-label-right {
+                        color: rgba(74, 74, 74, 1);
+                    }
+
+                    &-placeholder {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+
+                &-status {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    column-gap: 25px;
+                    margin-top: 36px;
+
+                    span:nth-child(1) {
+                        display: inline-block;
+                        height: 16px;
+                        width: 16px;
+                        border-radius: 15px;
+                    }
+
+                    &--available {
+                        display: flex;
+                        align-items: center;
+                        column-gap: 13px;
+
+                        span:nth-child(1) {
+                            background-color: rgba(164, 164, 164, 1);
+                        }
+                    }
+                    &--booked {
+                        display: flex;
+                        align-items: center;
+                        column-gap: 13px;
+
+                        span:nth-child(1) {
+                            background-color: rgba(57, 57, 57, 1);
+                        }
+                    }
+                    &--selected {
+                        display: flex;
+                        align-items: center;
+                        column-gap: 13px;
+
+                        span:nth-child(1) {
+                            background-color: rgba(141, 9, 13, 1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

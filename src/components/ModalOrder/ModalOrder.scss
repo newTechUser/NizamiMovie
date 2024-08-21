@@ -1,0 +1,142 @@
+.order {
+    .orderModal {
+        background-color: #8d090d;
+        color: white;
+        border-radius: 15px;
+        width: 230px;
+        height: 45px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
+.DIALOG {
+    .Dialogcontainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 30px;
+
+        .btnDialog {
+            .orderbtn {
+                background-color: #8d090d;
+                color: white;
+                border-radius: 15px;
+                border: none;
+                width: 230px;
+                height: 45px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+        .Dialoghead {
+            margin: 0;
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+                sans-serif;
+        }
+        .form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            input {
+                border: 1px solid gray;
+            }
+            .formitem {
+                .paymentcard {
+                    width: 500px;
+                    height: 38px;
+                    border-radius: 5px;
+                }
+                .paymenticon {
+                    padding-top: 10px;
+                    .payment {
+                        width: 500px;
+                        height: 36px;
+                        border-radius: 5px;
+                        z-index: 1;
+                        background-size: 20px;
+                        background-image: url("@/assets/imgs/paymentIcon.png");
+                        background-repeat: no-repeat;
+                        background-position: right 25px bottom 50%;
+                        .paymenticon {
+                            position: relative;
+                        }
+
+                        .paymentitem {
+                            z-index: 1;
+                            position: absolute;
+                            top: 50%;
+                            right: 10px; /* İkonun inputun sağ tarafına yerleşmesi için gerekli boşluk */
+                            transform: translateY(-50%); /* İkonu dikey olarak ortalamak için */
+                            pointer-events: none;
+                        }
+                    }
+                }
+                .inputTitle {
+                    margin: 8px;
+                    text-align: lefts;
+                    font-size: 18px;
+                    font-weight: bold;
+                    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+                        "Helvetica Neue", sans-serif;
+                }
+                .name {
+                    width: 500px;
+                    height: 38px;
+                    border-radius: 5px;
+                }
+                .formitemContainer {
+                    display: flex;
+                    align-items: center;
+                    gap: 36px;
+                    .number {
+                        width: 320px;
+                        height: 38px;
+                        border-radius: 5px;
+                    }
+                    .promoBtn {
+                        width: 140px;
+                        height: 38px;
+                        font-weight: bold;
+                    }
+                    .prefiks {
+                        height: 38px;
+                        width: 100px;
+                        color: rgba(67, 67, 67, 1);
+                    }
+                }
+                .formitemcontainer {
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                    .number {
+                        width: 320px;
+                        height: 38px;
+                        border-radius: 5px;
+                    }
+                    .prefiks {
+                        height: 38px;
+                        width: 70px;
+                    }
+                }
+            }
+        }
+        .textContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+        .Dialogcontent {
+            text-align: center;
+            width: 337px;
+            height: 69px;
+            padding-left: 80px;
+            padding-right: 80px;
+            font-size: 18px;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.aboutUs {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 120px;
+    padding-left: 190px;
+    padding-right: 190px;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1), 0 -4px 2px -2px rgba(0, 0, 0, 0.1);
+
+    .aboutTextSide {
+        width: 540px;
+        .contentTitle {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .contentHead {
+            font-size: 15px;
+            font-style: italic;
+            color: gray;
+        }
+        .contentMain {
+            padding-top: 30px;
+            font-size: 17px;
+            text-align: left;
+        }
+    }
+    .aboutImgSide {
+        .img {
+            width: 556px;
+            height: 418px;
+            padding: 0;
+            margin: 0;
+        }
+    }
+}

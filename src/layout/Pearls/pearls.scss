@@ -1,0 +1,43 @@
+.container {
+    padding: 0 106px;
+    margin-bottom: 75px;
+
+    .user__container {
+        &--timeLine {
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 50px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        &--content {
+            display: flex;
+            column-gap: 111px;
+            padding: 0 86px;
+            margin-top: 81px;
+
+            &-info {
+                &-type {
+                    font-style: italic;
+                    font-size: 11px;
+                    line-height: 16.5px;
+                }
+                &-header {
+                    font-size: 25px;
+                    line-height: 24px;
+                    color: rgba(56, 56, 56, 1);
+                    margin-bottom: 30px;
+                    margin-top: 6px;
+                }
+                &-text {
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: rgba(93, 93, 93, 1);
+                }
+            }
+        }
+    }
+}

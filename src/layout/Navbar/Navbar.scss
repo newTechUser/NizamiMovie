@@ -1,0 +1,26 @@
+.Navbar {
+    position: absolute;
+    top: 22px;
+    left: 0;
+    right: 0;
+    padding-left: 96px;
+    padding-right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    background-color: transparent;
+    .logoimage {
+        cursor: pointer;
+    }
+
+    .flexend {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .userIcon {
+            cursor: pointer;
+        }
+    }
+}

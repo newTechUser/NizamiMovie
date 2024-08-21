@@ -1,0 +1,23 @@
+.comingSoon__container {
+    padding: 0 100px;
+    margin-top: 86px;
+    margin-bottom: 100px;
+
+    &-title {
+        font-size: 25px;
+        line-height: 24px;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+
+    &-cards {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        column-gap: 25px;
+        row-gap: 60px;
+
+        div {
+            cursor: pointer;
+        }
+    }
+}

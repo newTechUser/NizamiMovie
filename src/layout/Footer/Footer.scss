@@ -1,0 +1,45 @@
+.footer {
+    padding: 0px 211px 15px 211px;
+
+    .footerMain {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        .footItems {
+            .footTitle {
+                font-weight: bold;
+                font-size: 19px;
+            }
+            .footContent {
+                padding-top: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                .footContents {
+                    font-size: 16px;
+                    color: gray;
+                    cursor: pointer;
+                }
+            }
+            .footContentLogo {
+                padding-top: 20px;
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                gap: 15px;
+                cursor: pointer;
+                .footContentsLogo {
+                    font-size: 16px;
+                    color: gray;
+                }
+            }
+        }
+    }
+    .footerEnd {
+        hr {
+            margin-bottom: 20px;
+        }
+        padding-top: 70px;
+        color: gray;
+    }
+}
